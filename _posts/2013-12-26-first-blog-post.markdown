@@ -31,5 +31,3 @@ if __name__ == '__main__':
   trio = 'lando', 'rb', 'samcal'
   Adventure(trio).embark()
 {% endhighlight %}
-
-[CC]: http://www.closetclicks.com
