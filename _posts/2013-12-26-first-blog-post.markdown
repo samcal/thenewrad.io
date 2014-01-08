@@ -3,7 +3,7 @@ layout: post
 title:  "First Blog Post"
 author: "Sam Calvert"
 date:   2013-12-26 14:26:00
-categories: articles
+categories: sam
 ---
 
 First impressions can be difficult, especially when they can be put off, as is the case in a context similar to the one I find myself in now. If someone like me wishes to put their thoughts out into the world, there is not (and should not be) any reason for the readers to share their ideas that conflict with mine, and possibly construct and share their opinions of myself personally. This is a lot of pressure for the writer, and has a tendency to be avoided if at all possible.
