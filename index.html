@@ -3,11 +3,21 @@ layout: default
 title: The New Rad.io
 ---
 
+<div class="header">
+  <img src='img/mainradio.png' />
+  <em style='font-weight: 100;'>The New Rad</em>io
+</div>
+
+<div class="contributors">
+  Sam<br />
+  Nick<br />
+  Royce
+</div>
+
 <div id="home">
-  <h1>Blog Posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li class='{{ post.author | split: " " | first | downcase }}'><a href="{{ post.url }}">{{ post.title }}</a><br />{{ post.subtitle }}</li>
     {% endfor %}
   </ul>
 </div>
