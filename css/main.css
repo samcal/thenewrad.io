@@ -102,7 +102,7 @@ a:visited { color: #a0a; }
 }
 
 .header img {
-  width: 120px;
+  width: 100px;
   margin: 10px auto;
   display: block;
 }
@@ -111,13 +111,19 @@ a:visited { color: #a0a; }
   position: fixed;
   left: 0;
   top: 30%;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 35px;
-  font-weight: 300;
+  font-weight: 400;
   padding-left: 60px;
   padding-right: 20px;
   border-right: 1.5px solid rgb(220,222,224);
 }
+
+.contributors img {
+  width:40px;
+  display:block;
+}
+
 
 .title {
   display: inline-block;
