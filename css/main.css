@@ -48,7 +48,9 @@ hr { border-top: 1px solid rgb(220,222,224); }
 
 .posts li {
   line-height: 1.75em;
-  margin-bottom: 40px;
+  margin: auto auto 40px;
+  width: 100%;
+  padding: 0 10px;
 }
 
 .posts li.nick {
@@ -114,7 +116,7 @@ hr { border-top: 1px solid rgb(220,222,224); }
   position: fixed;
   left: 0;
   top: 40%;
-  line-height:100%;
+  line-height: 35px;
   font-size: 15px;
   font-weight: 400;
   padding-left: 150px;
@@ -124,7 +126,7 @@ hr { border-top: 1px solid rgb(220,222,224); }
 
 .contributor img {
   vertical-align: middle;
-  width: 35px;
+  height: 35px;
   margin-right: 5px;
   margin-bottom:15px;
 }
@@ -254,4 +256,43 @@ hr { border-top: 1px solid rgb(220,222,224); }
 
 .post pre.terminal code {
   background-color: #333;
+}
+
+/*****************************************************************************/
+/*
+/* Media Queries
+/*
+/*****************************************************************************/
+
+@media (max-width: 756px) {
+  .site {
+    width: 100%;
+  }
+
+  .header img {
+    width: 40%;
+  }
+
+  .contributors {
+    display: none;
+  }
+
+  .post-title, .post {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .post-title {
+    height: auto;
+    text-align: center;
+  }
+
+  .post-title img {
+    width: 40%;
+    position: static;
+  }
+
+  .post-title .text {
+    position: static;
+  }
 }
