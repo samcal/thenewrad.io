@@ -16,9 +16,9 @@ Posting an article
 Header Options
 --------------
 
-*layout*: The template from `_layouts/` that the post will render.
-*title*: The title of the post.
-*subtitle*: The subtitle of the post. Goes below the title.
-*author*: Your name, or something else.
-*date*: The posting date, in the form of `YYYY-MM-DD HH:MM:SS` (24-hour time)
-*categories*: The url route prefix for the post. For example, if you had a post with filename `2014-01-01-my-new-post.markdown`, with `categories: foo` defined in the header, the url for that post would be `http://thenewrad.io/foo/2014/01/01/my-new-post.html`.
+- **layout**: The template from `_layouts/` that the post will render.
+- **title**: The title of the post.
+- **subtitle**: The subtitle of the post. Goes below the title.
+- **author**: Your name, or something else.
+- **date**: The posting date, in the form of `YYYY-MM-DD HH:MM:SS` (24-hour time)
+- **categories**: The url route prefix for the post. For example, if you had a post with filename `2014-01-01-my-new-post.markdown`, with `categories: foo` defined in the header, the url for that post would be `http://thenewrad.io/foo/2014/01/01/my-new-post.html`.
