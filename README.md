@@ -9,5 +9,6 @@ Posting an article
 1. Make a new markdown file entitled year-month-day-title-with-hyphens.markdown in the _posts directory
 2. Write the header like the other articles
 3. Write your article in markdown
-4. Commit the article
-5. Push
+4. `git add -A`
+5. `git commit -m 'my new article'`
+6. `git push`
