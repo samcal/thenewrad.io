@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Symbiosis"
-subtitle: "Greedy Teamwork"
+subtitle: "/eco(logy|nomics)/"
 author: "Sam Calvert"
 date: 2014-02-28 11:45:00
 categories: samcal
