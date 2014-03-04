@@ -5,6 +5,7 @@
 /*****************************************************************************/
 
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,900,300italic,400italic);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:300italic,300');
 
 /* Global Reset */
 * {
@@ -229,9 +230,10 @@ hr { border-top: 1px solid rgb(220,222,224); }
 
 
 .post {
-  font-family: Georgia;
-  font-size: 1.5em;
-  line-height: 1.6em;
+  font-family: 'Merriweather', Georgia;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: .01rem;
 }
 
 /* standard */
