@@ -12,9 +12,7 @@ Everybody wants to improve. All people are in search of something; some attribut
 
 Why not, then, does everyone act? Why are so many people stuck in limbo? Feeling as though they can never achieve that which they so much desire.
 
-## I believe two things. 
-1. People are scared of trying, because they are scared of failing.
-2. People don’t really want it.
+I believe two things. First, people are scared of trying, because they are scared of failing. Second, people don’t really want it.
 
 # Fearsome Failure
 The fear of failure is the single most important thing that I have ever realized to be hindering my action. I strongly believe that at the root of all my procrastination is the notion that if I spend more time or think about it for a little bit longer that, then, somehow, someway I will be better equipped or in a better state of mind or better able to handle whatever it is that I need to do. This covers everything from the spanish homework which I know I won’t understand the first 2-3 times through, to the design that I really want to create for that one project. 
