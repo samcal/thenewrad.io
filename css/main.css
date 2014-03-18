@@ -236,6 +236,10 @@ hr { border-top: 1px solid rgb(220,222,224); }
   letter-spacing: .01rem;
 }
 
+.post .footnotes {
+  font-size: 0.5em;
+}
+
 /* standard */
 .post pre {
   border: 1px solid #ddd;
