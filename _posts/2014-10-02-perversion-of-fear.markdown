@@ -72,7 +72,7 @@ Depression is likewise related to this perversion of fear. Society today emphasi
 
 Therefore a fear of being sad exists. This fear can manifest itself though, as sadness. The debilitation of the meloncholic is her or his evaluation of each happening as producing either good or bad emotion.
 
-It is in testing for sadness that meloncholy grows. The thought produces the feeling, and conflates with the events in question.  The fear of negativity grows by asking about it repeatedly, and grows with the accumulation of falacious conflations. [^1] The fear prevents recovery.
+It is in testing for sadness that meloncholy grows. The thought produces the feeling, and conflates with the events in question.  The fear of negativity grows by asking about it repeatedly, and grows with the accumulation of falacious conflations[^1]. The fear prevents recovery.
 
 Homophobia
 ----------
@@ -81,9 +81,9 @@ I take homophobia as another fear common to society today. It too is a manifesta
 
 In accepting the existence or possibility of homosexuality, one must also accept the option as a possiblity of one's own sexual orientation.
 
-Society (and especially its conceptions of masculinity) pressures against homosexuality. Subsequenlty one may fear one's true sexual orientation be homosexual.
+Society (and especially its conceptions of masculinity) pressures against homosexuality. Subsequently one may fear one's true sexual orientation be homosexual.
 
-This fear produces homophobia and fuels those who argue that homosexuality does not actually exist - as it could then not possibly threaten one's identity [^2].
+This fear produces homophobia and fuels those who argue that homosexuality does not actually exist - as it could then not possibly threaten one's identity[^2].
 
 The presence of fear removes the possibility of an unbiased, rational impression, especially as the presence of fear can produce unsettling feelings.
 
@@ -96,5 +96,5 @@ The perversion of fear produces psychological unrest and pollutes identity.
 
 In this way, I view fear and its perversion as a threat. I fear it. Though by recognizing it, perhaps I can overcome any obstacles it may present to my clarity of thought.
 
-[^1] The causes of depression are multivaried and multifaceted, and that I do not suppose to have a full understanding their entirety. This is one interpretation of the charecteristic persistence of depression.
-[^2] Disregarding religious/supernatural opposition
+[^1]: The causes of depression are multivaried and multifaceted, and I do not suppose to have a full understanding of their entirety. This is one interpretation of the persistence of depression.
+[^2]: Disregarding religious/supernatural opposition
