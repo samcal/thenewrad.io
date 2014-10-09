@@ -44,7 +44,7 @@ What a time to believe both in humanity and progress. What a time to articulate,
 _Michael Collins is the only person ever, not in this photo_
 
 [^1]: Further reading: **Gödel, Escher, Bach** by Douglas Hofstadter
-[^2]: It could be argued that true AI must be self-aware, itself a sentient being, though I take a less nuanced, though sufficiently distant definition here.
+[^2]: It could be argued that true AI must be self-aware, itself a sentient being. I take a less nuanced, though sufficiently distant definition here.
 
 
 
