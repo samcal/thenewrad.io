@@ -28,7 +28,7 @@ If humanity ever did create such artificial intelligence it would be unforgivabl
 
 # My Goal
 
-I want to build systems, that incorporate aspects of artificial intelligence, at least aspects of machine learning, and leverage the permeation of technology and instrumentation throughout our lives to improve the human experience and propel the progress of community. A project for which we only have the beginnings: [elos](github.com/elos).
+I want to build systems that incorporate aspects of artificial intelligence, at least aspects of machine learning, and leverage the permeation of technology and instrumentation throughout our lives to improve the human experience and propel the progress of community. A project for which we only have the beginnings: [elos](github.com/elos).
 
 Unsurprisingly, people often express discomfort at the idea of a computer system managing, and "deciding," for them. The shy from the idea that a system, these constructs of misaligned, hyperbolized, perspectivistic values and goals, could ever accurately inform a meaningful human decision.
 
