@@ -250,6 +250,11 @@ blockquote {
   letter-spacing: .01rem;
 }
 
+.post img {
+  width: 110%;
+  margin-left: -5%;
+}
+
 .post .footnotes {
   font-size: 0.7em;
 }
