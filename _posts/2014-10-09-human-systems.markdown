@@ -30,13 +30,13 @@ If humanity ever did create such artificial intelligence it would be unforgivabl
 
 I want to build systems that incorporate aspects of artificial intelligence, at least aspects of machine learning, and leverage the permeation of technology and instrumentation throughout our lives to improve the human experience and propel the progress of community. A project for which we only have the beginnings: [elos](github.com/elos).
 
-Unsurprisingly, people often express discomfort at the idea of a computer system managing, and "deciding," for them. The shy from the idea that a system, these constructs of misaligned, hyperbolized, perspectivistic values and goals, could ever accurately inform a meaningful human decision.
+Unsurprisingly, people often express discomfort at the idea of a computer system managing, and "deciding," for them. They shy from the idea that a system, a perpetuator of misaligned, hyperbolized, perspectivistic values and goals, could ever accurately inform a meaningful human decision.
 
-And rightly so: their uneasiness is not unfounded. For if we built a system without the human component, without room for human expression, without the scope of human influece, we should destroy it. It would be best.
+And rightly so: their uneasiness is not unfounded. For if we built a system without the human component, without the space for human expression, without the scope of human influence, we should destroy it.
 
-But with elos, we hope to design for human component, to build in the possibility and opportunity and want to step outside of the system. To ask our _human_ users about their beliefs and values, their goals - both distance and pressing.
+With elos, we hope to design for human component, to build in the possibility and opportunity and desire to step outside of the system. To ask our _human_ users about their beliefs and values and goals - both distant and pressing.
 
-We aspire to build a system that begs not the question of whether we like where we are, but instead raises the question of whether we like were humanity is going. We believe that a such a point could nowhere else be better contested that in the individual's life.
+We aspire to build a system that begs not the question of whether we like where we are, but instead raises the question of whether we like where humanity is going. We believe that a such a point could nowhere else be better contested that in the individual's life.
 
 What a time to believe both in humanity and progress. What a time to articulate, challenge, confront and leap outside of the systems we live in. The systems we construct for ourselves.
 
