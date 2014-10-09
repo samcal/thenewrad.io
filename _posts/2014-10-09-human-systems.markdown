@@ -30,7 +30,7 @@ If humanity ever did create such artificial intelligence it would be unforgivabl
 
 I want to build systems, that incorporate aspects of artificial intelligence, at least aspects of machine learning, and leverage the permeation of technology and instrumentation throughout our lives to improve the human experience and propel the progress of community. A project for which we only have the beginnings: [elos](github.com/elos).
 
-Unsurprisingly, I experience often people's discomfort shyness at the idea of a computer system managing, and "deciding," for them. The shy from the idea that a system, these constructs of misaligned, hyperbolized, perspectivistic values and goals, could ever accurately inform a meaningful human decision.
+Unsurprisingly, people often express discomfort at the idea of a computer system managing, and "deciding," for them. The shy from the idea that a system, these constructs of misaligned, hyperbolized, perspectivistic values and goals, could ever accurately inform a meaningful human decision.
 
 And rightly so: their uneasiness is not unfounded. For if we built a system without the human component, without room for human expression, without the scope of human influece, we should destroy it. It would be best.
 
