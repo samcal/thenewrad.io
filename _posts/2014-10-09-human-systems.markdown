@@ -41,7 +41,7 @@ We aspire to build a system that begs not the question of whether we like where 
 What a time to believe both in humanity and progress. What a time to articulate, challenge, confront and leap outside of the systems we live in. The systems we construct for ourselves.
 
 ![Apollo 11 and Earth](http://www.slate.com/content/dam/slate/blogs/bad_astronomy/2013/07/12/apollo11_lm_michaelcollins.jpg.CROP.original-original.jpg)
-->_Michael Collins is the only person ever, not in this photo_<-
+-> _Michael Collins is the only person ever, not in this photo_ <-
 
 [^1]: Further reading: **Gödel, Escher, Bach** by Douglas Hofstadter
 [^2]: It could be argued that true AI must be self-aware, itself a sentient being. I take a less nuanced, though sufficiently distant definition here.
