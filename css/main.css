@@ -214,14 +214,14 @@ hr { border-top: 1px solid rgb(220,222,224); }
 
 .post-title .text {
   position: absolute;
-  top: 20px;
+  top: 25px;
   left: 60px;
   font-weight: 900;
   font-size:20px;
 }
 
 .post-title .text h3 {
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 18px;
   font-weight:300;
 }
