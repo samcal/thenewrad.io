@@ -152,7 +152,7 @@ hr { border-top: 1px solid rgb(220,222,224); }
   color: #000;
 }
 
-  
+
 
 .header a.extra {
   color: #aaa;
@@ -226,8 +226,22 @@ hr { border-top: 1px solid rgb(220,222,224); }
   font-weight:300;
 }
 
+blockquote {
+  padding-left: 15px;
+  border-left: 5px solid #D52F31;
+}
 
+.post.nick blockquote {
+  border-color: #66E6D9;
+}
 
+.post.sam blockquote {
+  border-color: #6BE26A;
+}
+
+.post.royce blockquote {
+  border-color: #3786E4;
+}
 
 .post {
   font-family: 'Merriweather', Georgia;
@@ -244,7 +258,6 @@ hr { border-top: 1px solid rgb(220,222,224); }
 .post pre {
   border: 1px solid #ddd;
   background-color: #eef;
-  
   padding: 0 .4em;
 }
 
