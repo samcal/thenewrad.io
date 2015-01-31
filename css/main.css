@@ -243,6 +243,22 @@ blockquote {
   border-color: #3786E4;
 }
 
+a {
+  text-decoration: none;
+}
+
+.post.nick a {
+  color: #20C5B4;
+}
+
+.post.sam a {
+  color: #2BD529;
+}
+
+.post.royce a {
+  color: #3786E4;
+}
+
 .post {
   font-family: 'Merriweather', Georgia;
   font-weight: 300;
