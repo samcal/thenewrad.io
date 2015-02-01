@@ -7,7 +7,7 @@ date: 2015-01-30 21:00:00
 categories: samcal
 ---
 
-Royce's post on his experience with _Thinking Fast and Slow_ mentioned the idea
+[Royce's post on his experience with _Thinking Fast and Slow_](http://thenewrad.io/rbfasho/2015/01/26/reading-fast-and-slow.html) mentioned the idea
 of putting oneself in discomfort in order to improve oneself. This idea reminded
 me of other ideas by Stoic philosophers, summarized in this passage by William
 B. Irvine, a modern Stoic writer and historian:
