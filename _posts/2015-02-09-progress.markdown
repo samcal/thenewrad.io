@@ -1,0 +1,35 @@
+---
+layout: post
+title: "Progress"
+subtitle: "on the role of modern computers"
+author: "Sam Calvert"
+date: 2015-02-09 10:00:00
+categories: samcal
+---
+
+I recently had a discussion with a friend of mine in which we were discussing
+how mankind landed astronauts on the moon with incredibly weak computers by
+today's standards. Following this logic, he concluded that we could not possibly
+have landed the Apollo 11 on the moon, as we simply did not have the computing
+power necessary to perform such a feat.
+
+While the "faked moon landing hoax" is ridiculous for [other
+reasons](http://i.imgur.com/B3X48s9.jpg), this point struck a chord with regard
+to how we think of computers today. It's not as if Neil Armstrong simply pushed a
+button that said "To the Moon", leaving a computer to get him and his crew
+there. This sort of mission required, and in many ways still does require, an
+intelligent human to know when, why, and how to do any sort of necessary maneuver.
+
+![](http://i.imgur.com/B3X48s9.jpg)
+<center><em>NASA scientits with a board of calculations, 1961</em></center>
+
+The calculations we needed to compute were not difficult, definitely not so
+difficult as to require supercomputers and massive data centers. All of the
+calculations required to get to the moon can be done with a combination of
+experimentation and a pocket calculator. We used computers to make instruments
+that gave us data for the rocket's vital signs, to communicate with the rocket,
+and to do simple calculations quickly.
+
+Perhaps there will be a time when it is better to trust the lives of
+space-faring humans to a computer over a human specialist. Until then, computers
+will simply remain the trusty sidekick to the superheroic mathematician.
