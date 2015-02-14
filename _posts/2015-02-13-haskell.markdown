@@ -1,0 +1,189 @@
+---
+layout: post
+title: "Recursive Problem Solving"
+subtitle: "where Sam tricks you into learning Haskell"
+author: "Sam Calvert"
+date: 2015-02-12 09:00:00
+categories: samcal
+---
+
+A friend of mine recently told me of a technical interview question that he was
+asked when he applied for a job at Facebook. It was an implementation
+of [Regular Expressions](http://en.wikipedia.org/wiki/Regular_expression), with
+a very simplified alphabet. The characters will be:
+
+* `a-z`, which matches that character
+* `.`, which matches any character
+* `*`, which matches 0 or more occurances of the preceding character
+
+We're going to write a solution in Haskell.
+
+Our function `match` will take 2 `String`s, a pattern and a string to be
+matched, and will return a boolean. In Haskell, we write that type declaration
+as follows:
+
+{% highlight haskell %}
+match :: String -> String -> Bool
+{% endhighlight %}
+
+The first `String` is a pattern, the second is a `String` to be matched, the `Bool`
+is what we return.
+
+We will be defining this function recursively, so a good place to start is with
+some base conditions. These are simple conditions that will always hold true:
+
+{% highlight haskell %}
+match :: String -> String -> Bool
+match [] [] = True
+match [] _  = False
+{% endhighlight %}
+
+Woah, woah, woah, this is super weird. To understand this, we need some
+background information.
+
+A `String` is just a list of `Char`s. In Haskell, we write this as:
+{% highlight haskell %}
+typealias String = [Char]
+{% endhighlight %}
+
+And function application happens very similarly to bash, with spaces in between
+arguments:
+
+{% highlight haskell %}
+f x y --- equivalent to f(x, y) in other languages
+{% endhighlight %}
+
+So with this code:
+{% highlight haskell %}
+match :: String -> String -> Bool
+match [] [] = True
+match [] _  = False
+{% endhighlight %}
+we say that we will return `True` if the pattern and string are both empty, and
+`False` if the pattern is empty, but the string is not.
+
+Now what if the string is empty, but the pattern isn't? That is a little more
+complicated, because with the pesky `*`, we can still match that string. The
+following code will do the trick:
+
+{% highlight haskell %}
+match pattern [] =
+  case pattern of
+    (_:'*':restOfPattern) -> match restOfPattern []
+    _ -> False
+{% endhighlight %}
+
+This piece of code matches a non-empty pattern with an empty string. Then, using
+a `case...of` statement, we pattern-match according to the contents of the
+pattern string. If the pattern is a `Char`, followed by an `*`, then we pop off
+those `Char`s and recheck. Otherwise, the pattern must not match, and we return
+`False`.
+
+[Pattern Matching](http://learnyouahaskell.com/syntax-in-functions) does all of
+the magic behind this. The expression `(_:'*':restOfPattern)` matches a `String`
+with any first `Char`, followed by an `*`, and binds the rest of the `String` to
+the variable `restOfPattern`.
+
+Alright! Now let's implement the part of the function that will do the most
+legwork, the recursion that matches character-to-character. It looks like this:
+
+{% highlight haskell %}
+match (firstOfPattern:restOfPattern) (firstOfString:restOfString)
+  | firstOfPattern == '.' = match restOfPattern restOfString
+  | firstOfPattern == firstOfString = match restOfPattern restOfString
+  | otherwise = False
+{% endhighlight %}
+
+With our two `String` inputs, we pop the first `Char` off of the `String`. If
+the first of the pattern is a `.`, then we check for a match for the rest of the
+`String`. We do the same if the first `Char` of the pattern and string are the
+same. Otherwise, the pattern does not match and we return `False`.
+
+OK, so what do we have so far? We have a function that can compare two
+`String`s, and we can replace `.`s for letters in the pattern `String` and it
+will still match the proper given string.
+
+Next, let's implement the functionality for `*`. Let's start in the same way,
+popping off the first character of both the pattern and the string, pattern
+matching so that the `*` will be in the right place for this logic. Upon
+comparison between the first letters, there are two outcomes:
+
+1. The first letters match, so we pop one letter off of the string (not the
+   pattern) and recheck.
+2. The first letters do not match, and we pop the letter and `*` off of the
+   pattern (not the string) and recheck.
+
+The logic looks like this in Haskell:
+
+{% highlight haskell %}
+match pattern@(firstOfPattern:'*':restOfPattern) s@(firstOfString:restOfString)
+  | firstOfPattern == firstOfString = match pattern restOfString
+  | otherwise = match restOfPattern s
+{% endhighlight %}
+
+Ok, so now we have an operator, `*` that will allow a pattern to have a feature
+where the preceding character can be repeated 0 or more times. We're almost
+finished! We just need one more case: the `.*` sequence in the pattern, which
+matches any character sequence, or no characters at all. The tricky part about
+this is that we can't just continue popping characters off, simply because we
+won't get to the end of the pattern, and we will return `False` based off of
+our base conditions! So, when we come across a `.*`, we need to check the rest
+of the pattern and string for a match, just in case it is time to stop matching
+with the `.*`. When we come across a `.*`, there are two options again:
+
+1. The rest of the pattern matches the string, and we return `True`.
+2. Otherwise, we pop a character off of the string, and recheck. We can do this
+   because everything will match `.*`.
+
+The logic looks like this in Haskell:
+
+{% highlight haskell %}
+match pattern@('.':'*':restOfPattern) s@(firstOfString:restOfString)
+  | match restOfPattern s = True
+  | otherwise = match pattern restOfString
+{% endhighlight %}
+
+And we're done! We have a fully-functional simplified regex matcher. The entire
+code looks like this:
+
+{% highlight haskell %}
+match :: String -> String -> Bool
+match [] [] = True
+match [] _  = False
+match pattern [] =
+  case pattern of
+    (_:'*':restOfPattern) -> match restOfPattern []
+    _ -> False
+
+match pattern@('.':'*':restOfPattern) s@(firstOfString:restOfString)
+  | match restOfPattern s = True
+  | otherwise = match pattern restOfString
+
+match pattern@(firstOfPattern:'*':restOfPattern) s@(firstOfString:restOfString)
+  | firstOfPattern == firstOfString = match pattern restOfString
+  | otherwise = match restOfPattern s
+
+match (firstOfPattern:restOfPattern) (firstOfString:restOfString)
+  | firstOfPattern == '.' = match restOfPattern restOfString
+  | firstOfPattern == firstOfString = match restOfPattern restOfString
+  | otherwise = False
+{% endhighlight %}
+
+The order of declarations is important, as Haskell will pattern-match in order,
+so we need to define the `.*` case before the regular `*` case, because we don't
+the latter would still pattern-match the former.
+
+Recursion is a very powerful way to simplify problems, and Haskell is a very
+elegant way to implement a recursive solution to a problem.
+
+
+
+
+
+
+
+
+
+
+
+
