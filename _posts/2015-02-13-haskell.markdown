@@ -20,7 +20,7 @@ We're going to write a solution in Haskell.
 
 Our function `match` will take 2 `String`s, a pattern and a string to be
 matched, and will return a boolean. In Haskell, we write that type declaration
-as follows:
+as follows:[^1]
 
 {% highlight haskell %}
 match :: String -> String -> Bool
@@ -73,7 +73,7 @@ match pattern [] =
     _ -> False
 {% endhighlight %}
 
-This piece of code matches a non-empty pattern with an empty string. Then, using
+This piece of code matches a non-empty pattern with an empty string.[^2] Then, using
 a `case...of` statement, we pattern-match according to the contents of the
 pattern string. If the pattern is a `Char`, followed by an `*`, then we pop off
 those `Char`s and recheck. Otherwise, the pattern must not match, and we return
@@ -93,6 +93,23 @@ match (firstOfPattern:restOfPattern) (firstOfString:restOfString)
   | firstOfPattern == firstOfString = match restOfPattern restOfString
   | otherwise = False
 {% endhighlight %}
+
+The operator `:` has a type signature of
+{% highlight haskell %}
+(:) :: a -> [a] -> [a]
+{% endhighlight %}
+That means it takes a value of one type, and an array of the same type, and
+returns an array of that type. It is right-associative, and it puts the value at
+the beginning of the array:
+{% highlight haskell %}
+1:[2, 3] == [1, 2, 3] == 1:2:3:[]
+{% endhighlight %}
+In fact, at the lowest level, the syntax `[1, 2, 3]` is just syntactic sugar for
+`1:2:3:[]`.
+
+So when we pattern match with a `:` operator, Haskell pops the first character
+off of the array for us and puts it in a variable, and puts the rest of the
+array in another variable.[^3]
 
 With our two `String` inputs, we pop the first `Char` off of the `String`. If
 the first of the pattern is a `.`, then we check for a match for the rest of the
@@ -120,6 +137,9 @@ match pattern@(firstOfPattern:'*':restOfPattern) s@(firstOfString:restOfString)
   | firstOfPattern == firstOfString = match pattern restOfString
   | otherwise = match restOfPattern s
 {% endhighlight %}
+
+The `@` expression that precedes the pattern-matching blocks simply gives us
+another variable that refers to the entire array, for convenience.
 
 Ok, so now we have an operator, `*` that will allow a pattern to have a feature
 where the preceding character can be repeated 0 or more times. We're almost
@@ -170,20 +190,14 @@ match (firstOfPattern:restOfPattern) (firstOfString:restOfString)
 {% endhighlight %}
 
 The order of declarations is important, as Haskell will pattern-match in order,
-so we need to define the `.*` case before the regular `*` case, because we don't
+so we need to define the `.*` case before the regular `*` case, because if we don't
 the latter would still pattern-match the former.
 
 Recursion is a very powerful way to simplify problems, and Haskell is a very
 elegant way to implement a recursive solution to a problem.
 
+[^1]: The syntax `arg1 -> arg2 -> result` does seems a little strange coming from c-style langugaes, however, it is actually a good representation of [Function](http://en.wikipedia.org/wiki/Currying) [Currying](http://learnyouahaskell.com/higher-order-functions)
 
+[^2]: The reason why it doesn't also match an empty pattern with an empty string is that we define this part of the function after we define the value for an empty pattern with an empty string. Patterns are matched by priority in the order they appear, so the case where both arguments are empty has already been taken. The Haskell compiler is also very smart, and will tell you most times that you make a mistake when ordering implementations.
 
-
-
-
-
-
-
-
-
-
+[^3]: "Variable" is a loose term, because it is immutable. However, it is a familiar term for a similar concept.
