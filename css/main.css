@@ -247,6 +247,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .post.nick a {
   color: #20C5B4;
 }
