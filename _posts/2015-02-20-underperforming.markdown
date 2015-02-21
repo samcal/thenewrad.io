@@ -1,7 +1,7 @@
 ---
-layout: in_progress
+layout: post
 title: "Underperforming"
-subtitle: "you got the most shots up, but played like everyone else"
+subtitle: "you spent the most time in the gym, but played like everyone else"
 author: "Royce Branning"
 date: 2015-02-11 
 categories: rbfasho
