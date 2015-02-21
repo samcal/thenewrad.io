@@ -5,7 +5,7 @@ subtitle: "Dependency Inversion in Systems Design"
 author: "Nick Landolfi"
 date: 2015-02-01 12:00:00
 categories: lando
-inprogress: false
+inprogress: "false"
 ---
 
 Lately I have been building the core stack of [elos](https://github.com/elos/server). The structure is, relative to my experience, complex. It includes an [HTTP server](https://github.com/elos/server/blob/master/config/server.go) which manages an [API](https://github.com/elos/server/blob/master/config/routes.go) and this server [can upgrade](https://github.com/elos/server/blob/master/conn/web_socket.go) requests to websockets, which are then managed [autonomously](https://github.com/elos/autonomous) as [client data agents](https://github.com/elos/server/blob/master/agents/client_data.go) and require another [multiplexed transfer](https://github.com/elos/server/tree/master/transfer) [protocol](https://github.com/elos/documentation/blob/master/data/transfer/protocol.md). There is an [ontology of models](https://github.com/elos/server/tree/master/models), which fill elos' data needs. There are [services](https://github.com/elos/server/blob/master/config/services.go) which run independently of the system and inspect a user's data periodically. The elos "server" is really a backbone of a fair amount of infrastructure. It becomes increasingly difficult to think about the entire system when working on one particular aspect of it.

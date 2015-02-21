@@ -5,7 +5,7 @@ subtitle: "the choice to live"
 author: "Nick Landolfi"
 date: 2015-01-30 01:00:00
 categories: lando
-inprogress: false
+inprogress: "false"
 ---
 
 I recently had a close friend confide that he felt unmotivated; He didn't truly feel in love with anything. No experiences or accomplishments or "success". Everything was just momentum and despite considerable external cues of heading in the "right" direction, everything was too easy and pointless. This got us talking about life, and classically - the existential issue of meaning. The inevitable counter-question was posed: What do I love and why? From where do I derive purpose and meaning?
