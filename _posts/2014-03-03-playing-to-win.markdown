@@ -5,6 +5,7 @@ subtitle: "An Introduction"
 author: "Nick Landolfi"
 date: 2014-03-03 09:37:00
 categories: lando
+inprogress: false
 ---
 # Seeing is important, but not nearly half the battle
 

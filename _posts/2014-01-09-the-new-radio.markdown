@@ -5,6 +5,7 @@ subtitle: "I refuse to be your distraction."
 author: "Nick Landolfi"
 date:   2014-01-09 09:07:00
 categories: articles
+inprogress: false
 ---
 
 # The New Rad(.io)

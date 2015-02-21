@@ -5,6 +5,8 @@ subtitle: "on discomfort."
 author: "Sam Calvert"
 date: 2015-01-30 21:00:00
 categories: samcal
+inprogress: false
+
 ---
 
 [Royce's post on his experience with _Thinking Fast and Slow_](http://thenewrad.io/rbfasho/2015/01/26/reading-fast-and-slow.html) mentioned the idea
