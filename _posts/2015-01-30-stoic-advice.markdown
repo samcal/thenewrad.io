@@ -5,7 +5,6 @@ subtitle: "on discomfort."
 author: "Sam Calvert"
 date: 2015-01-30 21:00:00
 categories: samcal
-inprogress: "false"
 
 ---
 

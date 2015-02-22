@@ -5,7 +5,6 @@ subtitle: "changing the gameplan is risky, but sometimes necessary"
 author: "Royce Branning"
 date: 2015-02-03 
 categories: rbfasho
-inprogress: "false"
 ---
 
 As you saw this past Sunday, Pete Carrol, head coach of the seattle seahawks, called a passing play on the 1-yard line with time winding down and the superbowl on the line. The pass was intercepted, and what one moment looked like near certain victory turned to defeat for his team. 

@@ -5,7 +5,6 @@ subtitle: "Biting a Lemon"
 author: "Nick Landolfi"
 date: 2014-10-03 02:00:00
 categories: lando
-inprogress: "false"
 ---
 
 Mind and Body Connection

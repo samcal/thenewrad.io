@@ -5,7 +5,6 @@ subtitle: "on the role of modern computers"
 author: "Sam Calvert"
 date: 2015-02-09 10:00:00
 categories: samcal
-inprogress: "false"
 ---
 
 I recently had a discussion with a friend of mine in which we were discussing

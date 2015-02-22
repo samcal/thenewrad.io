@@ -5,7 +5,6 @@ subtitle: "Check your perspective at the door."
 author: "Sam Calvert"
 date: 2014-10-08 21:00:00
 categories: samcal
-inprogress: "false"
 ---
 
 For the past few months, while in limbo between the dog days of high school and the stark pseudo-reality of college, I've been working with [Zeal](http://www.zeal.com/), a startup that works to create useful problem sets for grade school kids on a per-student basis; all while being managed and observed by their teachers. I maintained and developed the Android app. This is what my average day was like:

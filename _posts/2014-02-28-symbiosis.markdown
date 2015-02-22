@@ -5,7 +5,6 @@ subtitle: "/eco(logy|nomics)/"
 author: "Sam Calvert"
 date: 2014-02-28 11:45:00
 categories: samcal
-inprogress: "false"
 ---
 
 The symbiotic relationship is a wonderful example of the sheer complexity generated in a Darwinian system of evolution (or, of the sheer genius of an intelligent designer, if your preferred cup of origin-theory tea is bland and unsatisfying)[^1]. In an ecological system, a **symbiotic relationship** is between two or more species that have co-evolved to form a mutually-beneficial interaction. The classic example is a system in which a smaller fish will eat parasites off of a larger fish. The large fish benefits by being clean and parasite-free, and the small fish benefits by getting food.

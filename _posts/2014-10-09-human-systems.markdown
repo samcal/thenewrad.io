@@ -5,7 +5,6 @@ subtitle: "Outside, In"
 author: "Nick Landolfi"
 date: 2014-10-09 15:00:00
 categories: lando
-inprogress: "false"
 ---
 
 # A Systematic World
