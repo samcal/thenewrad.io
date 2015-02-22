@@ -5,6 +5,7 @@ subtitle: "you spent the most time in the gym, but played like everyone else"
 author: "Royce Branning"
 date: 2015-02-11 
 categories: rbfasho
+inprogress: "true"
 ---
 
 I got my calc test back today. The original score of 88 was crossed out and it was an 82. They had caught a mistake on the second review that they had missed on the first. The 88 was the score I saw online. I was already a little dissapointed I hadn't gotten a 90. I don't like to talk about grades in such explicit terms usually but I think it serves to illustrate the point I'm going to be talking about. I was mad that I didn't get a 90, or even a 100 for that matter, because I felt I had put in the time. 
