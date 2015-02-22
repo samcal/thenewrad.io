@@ -18,11 +18,7 @@ title: The New Rad.io
   <ul class="posts">
     {% for post in site.posts %}
     <li class='{{ post.author | split: " " | first | downcase }}'>
-      {% if post.inprogress=="false" %}
-      <a href="{{ post.url }}">{{ post.title }}</a><br />
-      {% else %}
-      <a>{{ post.title}}</a><br />
-      {% endif %}
+      <a {% if post.inprogress != 'true' %}href="{{ post.url }}"{% endif %}>{{ post.title }}</a><br />
       <span>{{ post.subtitle }}</span>
     </li>
     {% endfor %}
