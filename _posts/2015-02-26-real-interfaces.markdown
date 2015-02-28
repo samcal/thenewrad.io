@@ -26,4 +26,3 @@ Ok so you go to the ATM and you plug in your information. The ATM that is proces
 See it doesn't much matter how either bank stores the money (in fact banks don't _really_ store your money, they leverage against debt) because the ATM doesn't care. All the ATM cares about is that the bank knows how to authorize a user's deposit, and that once the ATM tell's the customer they are authorized and accepts the deposit, that the bank can effectively make the deposit. Even the guy verifiying the check doesn't need to know our bank stores assets in platinum. The guy who get the platinum from the main reserve doesn't need to know how the guy who manages the safety deposit box organizes the deposits. No one needs to worry so long as everyone can effectively complete the task they are expected. So long as everyone fulfills their requisite interface.
 
 
-
