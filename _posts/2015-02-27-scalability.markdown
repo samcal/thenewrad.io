@@ -7,25 +7,33 @@ date: 2015-02-27 4:13:00
 categories: lando
 ---
 
-I think an underlining problem of the next 20 years is going to be scalability, namely how systems, infrastructure, facilities and societies scale up. Computer systems face this issue today: social networks like twitter and facebook need to handle hundreds of millions of users. What works with you have 1000, or 10,000 doesn't work when you have 1 billion. Why this is true is a discussion for a nother article, but I will for now assume that it doesn't.
+### Developing
 
-I am currently enrolled in an Anthropology of Global Health course. We discuss topics of the developing world especially regarding health care and with a focus on what we (generally speaking the developed world) can do about the current state of affairs. We also discuss what factors led to suffering such as the AIDs and turboculosis crises in Haiti (spoiler: imperialism and slavery). What I find to be one of the more troubling, and less dealt with topics is the issues of what terms the developing and developed world.
+I believe that the problem of scalability will underscore the next 20 years. I regard scalability to be the property by which systems, infrastructure, facilities and societies serve the exponentially growing human population . Computer systems face this issue today: social networks like twitter and facebook need to handle hundreds of millions of users. And architects of these systems are learning that what works for a thousand, or ten thousand users doesn't world when you have one billion users. The fundamental existence of the issues of scalability is another discussion, for now let's assume that this problem exists.
 
-You see, when we talk about the developing world in reference to the developed world we imply that everyone is trying to catch up to us. That we want the developing world to become developed, and well, that we are developed. I think this is a gross oversight.
+I am currently enrolled in an Anthropology of Global Health course. We discuss the developing world's health care focusing on what we (generally speaking, the developed world) can do about the current issues and flaws in global health [^1]. We also discuss the factors contributing to the biosocial suffering and structural violence in countries such as Haiti [^2]. But what I find to be one of the more troubling, and least discusses issues, is the existence of the notions "developing" and "developed."
 
-If the entire subcontinent of India started living like we do today it would be an environmental catastrophe[^1]. The developing world can't catch up to the developed world because the developed world is doesn't have it figured out. We haven't solved a lot of the big issues, namely health care.
+When we discuss the "developing" world, we implicitly reference a "developed" world. Ee imply that everyone is trying to catch up to us. We imply that the goal is for the developing world to become developed. Worst yet, we imply that we are, well, developed. This implication is a gross oversight.
 
-When we study medical antrhopolgy there is a lot of self-loathing and complaining on the parts of antrhopologists about the inefficacy of the health programs. In the recent Ebola outbreaks people criticzed the WHO as it effectively declared the crisis over prior the the largest and most deadly outbreak(todo: add citations). What bothers me is that we think that the developed world knows how to handle such crises.
+### "Developed"
 
-To drive this point home I am going to give you a thought experiment. Imagine that you could teleport everybody affected with AIDs, turboculosis and malaria to every institutionalized brick-and-mortar western hospital anywhere. You could teleport them, just like that.
+If the entire subcontinent of India started living like we do today it would be an environmental catastrophe [^3]. The developing world can not catch up to the developed world because the developed world is does not have society figured out. Unless the entire developed world can agree that we are without problem the "developing" world should not _want_ to catch up. Some argue that the developed world is a better state than that experienced by the developing. I would argue that in the current equilibrium, this is true, but that we have yet to solve a lot of the big issues. I would argue that the developed world is in an unstable equilibrium and is not equipped to handle the chaos external to it, as evinced by the struggles of humanitarianism.
 
-You still wouldn't solve the crisis!
+In reading about medical anthropology I encounter a great degree of self-loathing and complaining specifically regarding the inefficacy of the western, "developed," health programs in the "developing" world. Anthropologists criticized the WHO regarding the WHO's misassesment that the crisis was effectively over prio to most severe outbreak (todo: add citations). It bothers me is that the "developed" world thinks that it knows how to handle such crises.
 
-Our hospitals couln't handle the load, and even if they could it wouldn't be effective. I just gave you a magical power, I said you can fricken teleport people and guess what, we still have a health care crisis. Heck, documentaries like Danka document the awful state of health care in Africa, what about documentaries like Sicko that document the awful state of health care in US.
+The following thought experiment motivated this article.
+
+Imagine that you could teleport everybody affected with AIDs, turboculosis and malaria to every institutionalized brick-and-mortar western hospital anywhere. You could teleport them, just like that.
+
+You still wouldn't solve the health crisis!
+
+Our hospitals couln't handle the load. I just gave you a magical power, I said you can fricken teleport people and guess what, we still have a health care crisis. Documentaries like Danka document the awful state of health care in Africa, what about documentaries like Sicko that document the awful state of health care in US.
 
 
-We need to figure out our situation first. Because our modern western health care doesn't scale. I'm saying it's great if you can solve a problem. And if only ten people have that problem then that's great too. But I'm also saying that even if you have a solution, you dare not call yourself developed until you can scale up. You see systems, whether the computer servers and databases of twitter and facebook, or the hospitals and preventative care of an entire nation, _need to scale_. It isn't enough to solve for n = 1, or n = 10, or n = 100,000. You need to scale for n = 1,000,0000. Or, n = 7,300,000 [^2].
+We need to figure out our situation first. Because our modern western health care doesn't scale. It'sgreat if you can solve a problem. And if only ten people have that problem then that's great too. But even if you have a solution, you dare not call it "developed" until you can scale up. Systems, whether the servers and databases of twitter and facebook, or the hospitals and preventative care of an entire nation, _need to scale_. It isn't enough to solve for n = 1, or n = 10, or n = 100,000. You need to solve for n = 1,000,0000. Because as of this writing, n = 7,300,000 [^4].
 
- [^1] Peter Thiel, _Zero to One_
- [^2] http://www.worldometers.info/world-population/
+[^1]: These issues being endemics like AIDs or lacking infrastructure.
+[^2]: Imperialism and Slavery and Racism
+[^3]: **Zero to One**
+[^4]: http://www.worldometers.info/world-population/
 
