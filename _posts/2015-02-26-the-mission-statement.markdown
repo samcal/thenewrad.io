@@ -2,7 +2,7 @@
 layout: post
 title: "The Mission Statement"
 subtitle: "Correct me if I'm wrong, but I think I'm writing about elos"
-author: "Sam Calvert"
+author: "Royce Branning"
 date: 2015-02-26 3:33:33
 categories: rbfasho
 ---
