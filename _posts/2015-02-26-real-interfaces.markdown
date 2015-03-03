@@ -13,9 +13,9 @@ A few weeks back I wrote a lengthy, pedantic, and extra-ordinarily dense article
 
 "It's like....well...it's kinda like...how. Do you know what a database is?" I finally got out, as my mind was racing with how to explain what it was that so excited me. She stared at me almost condescendingly before she replied: " I mean I've heard of them yes but if you are going to talk about modeling data in elos again I'm not sure I need to know"
 
-"No no no, this is different. Ok, how about ATMS..."
+"No no no, this is different. Ok, how about ATMs..."
 
-### ATMS
+### ATMs
 
 So what does an ATM do? Well, the whole idea is that it's an automated teller machine, that instead of going inside the bank, which is only open so many hours a day, you can get your money outside. That led to banks putting these machines right outside of the building, so you could show up, plug in your card and then get some money.
 
