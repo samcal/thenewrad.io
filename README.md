@@ -22,3 +22,4 @@ Header Options
 - **author**: Your name, or something else.
 - **date**: The posting date, in the form of `YYYY-MM-DD HH:MM:SS` (24-hour time)
 - **categories**: The url route prefix for the post. For example, if you had a post with filename `2014-01-01-my-new-post.markdown`, with `categories: foo` defined in the header, the url for that post would be `http://thenewrad.io/foo/2014/01/01/my-new-post.html`.
+- **inprogress**: A value of `true` will put the article on the main page, grayed-out, and without a link to the full text of the article. Any other value (including a lack of value) will have no effect.
