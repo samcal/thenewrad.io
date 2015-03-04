@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Abstraction Dialogues"
+title:  "Abstraction"
 subtitle: "ATMs, Databases and Justice"
 author: "Nick Landolfi"
 date: 2015-02-25 3:24:00
@@ -59,20 +59,6 @@ See it doesn't much matter how either bank stores the money (in fact banks don't
 
 "Hahahaha, Ok ok how is this at all like datbases?"
 
-Ahh! You see, it's exactly the same. Instead of money, databases just store data. The interface for database is basically anything that can Save and Find itemized pieces of data. There are a ton of ways to store the data, it doesn't matter how the functionality is implemented though, and the best way to design my system is such that I don't depend on any particular implementation. Much like the ATM didn't worry about any bank in particular, just a bank that could authorize a user and recieve a deposit. So today elos uses this one database, but we are not bound to it. If, as there almost certainly will be, a better database in the future, elos can just drop it in and it will work. Because elos is build around the idea of a database. Not of a particular store. My favority example is that elos could just a database that sent data to a chimpanzee keeping track of bits on a whiteboard. So long as that chimpazee could store and retrieve (and maybe query) data, it would work (though would be slow af).
+Ahh! You see, it's exactly the same. Instead of money, databases just store data. The interface for database is basically anything that can Save and Find itemized pieces of data. There are a ton of ways to store the data, it doesn't matter how the functionality is implemented though, and the best way to design my system is such that I don't depend on any particular implementation. Much like the ATM didn't worry about any bank in particular, just a bank that could authorize a user and recieve a deposit. So today elos uses this one database, but we are not bound to it. If, as there almost certainly will be, a better database in the future, elos can just drop it in and it will work. Because elos is build around the idea of a database
 
-"Ok so when you 'code,' when you build your elos system thing, you don't think about the database"
 
-Right! That's abstraction.
-
-"Wait an interfaces are..."
-
-The contract that I have with that abstraction. Saving and Retrieving is the interface of the database. Authorizing and depositing that of the bank. But a database and  a bank are both abstractions.
-
-"Hmm, cool....ok. Well I guess, I mean you said this applied to all systems, but what other..."
-
-I'm glad you asked. I contend that abstraction and interfaces are so effective that we have arrived there in our justice system as well.
-
-*Confused look*
-
-No no, hear me out.
