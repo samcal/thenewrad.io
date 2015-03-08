@@ -76,3 +76,7 @@ I'm glad you asked. I contend that abstraction and interfaces are so effective t
 *Confused look*
 
 No no, hear me out.
+
+ I think justice has evolved over time. Aristotle talked about the good life, the one right way to live. Then Kant talks instead about the treating humans as ends in themselves - no suggestion at how to live per say, but a suggestion on how to act (this is the part of Kant’s philosophy I do like). Finally Rawls appears and says there is no one right action or course of life, you need only satisfy certain requirements: namely treat people with respect. I think we have evolved from the difficult over-reaching perspective of prescriptive morality to a more abstracted notion governing morality. After all if you want to generalize something to work over all situations you have to generalize somewhat. So long as you act in a way not at odds with these certain principles, you are ok.
+
+ This is what the Declaration of Independence did to human rights. “Life, liberty and the pursuit of happiness.” The role of the government is to protect these rights, and each human is afforded these inalienable rights by nature of living. There’s no right way to govern, but any government must not infringe upon these inherent rights. Maybe Kant shouldn’t be saying there is exactly a correct morality, but rather so long as you treat people as an ends in themselves (rather than a means to an end) you are generally ok. I prefer that perspective.
