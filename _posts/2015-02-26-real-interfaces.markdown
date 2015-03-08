@@ -7,17 +7,19 @@ date: 2015-02-25 3:24:00
 categories: lando
 ---
 
-A few weeks back I wrote a lengthy and extra-ordinarily dense article on interfaces. My inclination to start from the technical side of interfaces was rooted in my own understanding of interfaces and abstraction through computer systems. Sadly, I lost sight of my original goal of demonstrating the role abstraction and interfaces play in systems design everywhere. I also wanted to argue that the better the abstraction the stronger, more resilient, and more useful the system. I attempt these goals again here.
+A few weeks back I wrote a lengthy and extra-ordinarily dense article on interfaces. My inclination to adopt a strictly technical perspective on interfaces was rooted in the history of my own understanding of abstraction through the lens of computer systems. Sadly, I lost sight of my original goal of demonstrating the role abstraction and interfaces play in systems design everywhere. I also failed to demonstrate that better abstraction leads to stronger, more resilient, and more useful the systems. I attempt to accomplish these goals again here.
 
 ### Explaining abstraction
 
-"It's like....well...it's kinda like...how. Do you know what a database is?" I finally got blurted, as my mind was racing with how to explain what it was that so excited me.
+>"It's like....well...it's kinda like...how. Do you know what a database is?"
 
-She stared at me almost condescendingly before she replied:
+I finally blurted. My mind raced... I searched for how to explain what it was that so excited me.
 
-"I mean I've heard of them yes but if you are going to talk about modeling data in elos again I'm not sure I need to know"
+She stared at me, there seemed a slight condescention in her reply:
 
-"No no no, this is different. Ok, how about ATMs..."
+> "I mean I've heard of them yes but if you are going to talk about modeling data in elos again I'm not sure I need to know"
+
+> "No no no, this is different. Ok, how about ATMs..."
 
 ### ATMs
 
