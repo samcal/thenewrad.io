@@ -7,6 +7,8 @@ date: 2015-05-08
 categories: samcal
 ---
 
+![](http://i176.photobucket.com/albums/w200/allievogiovane/MCEscher-DrawingHands.jpg)
+
 I just reread [my most recent post](/samcal/2015/02/12/haskell.html), which was
 meant to be about recursion. I took the liberty of writing the examples in
 Haskell, mostly because I believe it to be the most elegant language in which to
