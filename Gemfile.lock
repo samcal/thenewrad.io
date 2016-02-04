@@ -13,16 +13,12 @@ GEM
       celluloid (~> 0.16.0)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
-    posix-spawn (0.3.11)
-    pygments.rb (0.6.3)
-      posix-spawn (~> 0.3.6)
-      yajl-ruby (~> 1.2.0)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
+    rouge (1.10.1)
     timers (4.0.1)
       hitimes
-    yajl-ruby (1.2.1)
 
 PLATFORMS
   ruby
@@ -31,7 +27,7 @@ DEPENDENCIES
   jekyll-feed
   jekyll-watch
   kramdown
-  pygments.rb
+  rouge
 
 BUNDLED WITH
    1.10.2

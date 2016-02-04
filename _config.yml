@@ -1,5 +1,5 @@
 name: The New Rad.io
 markdown: kramdown
-highlighter: 'pygments'
+highlighter: rouge
 gems:
   - jekyll-feed
