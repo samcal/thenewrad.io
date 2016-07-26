@@ -1,0 +1,169 @@
+---
+layout: post
+title: "Sudoku Solver in Haskell"
+subtitle: "More functional programming"
+author: "Sam Calvert"
+date: 2016-03-23
+categories: samcal
+---
+
+At least 6 years ago, Peter Norvig wrote an excellent
+[article](http://norvig.com/sudoku.html) showing how to write a Sudoku solver in
+Python, using the ideas of constraint propagation and search. In this post, I
+will be showing the development of a Haskell implementation of his algorithm. If
+you are not familiar with Haskell, I would suggest reading his post first.
+
+The entire haskell solution can be found in [this
+gist](https://gist.github.com/samcal/3049e6f6b2a752029ec2).
+
+# Start with some definitions
+
+Norvig wrote his implementation in Python, and took heavy advantage of the
+language's dynamic types. With Haskell, we want to be more expressive with our
+types. Let's define types for all of the values we care about:
+
+{% highlight haskell %}
+type Square = String
+type Value  = Int                -- The number value in a Square
+type Grid   = Map Square [Value] -- The Sudoku grid
+{% endhighlight %}
+
+Okay, now we can define squares like Norvig:
+
+{% highlight haskell %}
+digits = [1..9]
+rows   = ['A'..'I']
+cols   = ['1'..'9']
+
+cross :: [a] -> [a] -> [[a]]
+cross xs ys = [ [x, y] | x <- xs, y <- ys ]
+
+squares :: [Square]
+squares = cross rows cols
+{% endhighlight %}
+
+This defines the cross product using Haskell's list comprehension syntax, which
+is not too different from Python's.
+
+Next let's define units and peers:
+
+{% highlight haskell %}
+unitList :: [[Square]]
+unitList = [ cross rows [c] | c <- cols ] ++
+           [ cross [r] cols | r <- rows ] ++
+           [ cross rs cs | rs <- ["ABC", "DEF", "GHI"],
+                           cs <- ["123", "456", "789"] ]
+
+peers :: Map Square [Square]
+peers = fromList [
+    (s, [ nub $ concat u | u <- unitList, s `elem` u ]) |
+        s <- squares ]
+{% endhighlight %}
+
+Although `unitList` is very similar to the Python definition, the definition for
+`peers` is a little different. It looks like our normal list comprehension
+syntax, with a few differences. The `elem` function is equivalent to `contains`
+in Python, testing whether a value is an element of a list. The function
+`concat :: [[a]] -> [a]` "flattens" a list, concatenating all of the inner
+lists. `nub` simply removes all of the duplicates in a list.
+
+Another initially difficult topic is the function application operator `$`. It's
+use is only to avoid using parentheses. It's defintion is as follows:
+
+{% highlight haskell %}
+($) :: (a -> b) -> a -> b
+f $ x = f x
+{% endhighlight %}
+
+When viewed like this, it seems completely useless. Why wouldn't we want to just
+apply the function directly and not use an operator? The key is that `$` has
+very low precedence, so the left and right side will be evaluated first, and
+then the function will be applied. So the expression `nub $ concat u` is
+equivalent to `nub (concat u)`.
+
+Let's write some tests:
+
+{% highlight haskell %}
+import qualified Data.Map as M
+import Test.Hspec
+import Sudoku
+
+main = hspec $ do
+    describe "Definitions" $ do
+        it "contains 81 squares" $ do
+            length squares `shouldBe` 81
+        it "contains 27 units" $ do
+            length unitList `shouldBe` 27
+        it "contains 20 peers for each square" $ do
+            peers `shouldSatisfy` and . (map (==20)) . (map length) . M.elems
+        it "contains the right peers for C2" $ do
+            M.lookup "C2" peers `shouldBe`
+                Just ["A2", "B2", "D2", "E2", "F2", "G2", "H2", "I2",
+                      "C1", "C3", "C4", "C5", "C6", "C7", "C8", "C9",
+                      "A1", "A3", "B1", "B3"]
+{% endhighlight %}
+
+This test suite uses [HSpec](http://hspec.github.io/index.html).
+
+# Grids
+
+Norvig uses the term *grid* to refer to the String representation of a sudoku
+puzzle, and *values* as his data structure. I don't really like those names, I'm
+going to refer to the data structure as a *grid* and the String representation
+as just a String.
+
+Here's how we parse a `Grid`:
+
+{% highlight haskell %}
+unsolvedGrid :: Grid
+unsolvedGrid = M.fromList [ (s, digits) | s <- squares ]
+
+parseGrid :: String -> Maybe Grid
+parseGrid dirtyGrid
+    | length grid == 81 = foldM (uncurry . assign) unsolvedGrid $ gridValues grid
+    | otherwise = Nothing
+    where
+        grid = filter (flip elem ('.':['0'..'9'])) dirtyGrid
+
+gridValues :: String -> [(Square, Value)]
+gridValues gridString = mapMaybe readValue $ zip squares gridString
+
+readValue :: (String, Char) -> Maybe (Square, Value)
+readValue (k, c)
+    | c `elem` ['1'..'9'] = Just $ (k, read [c])
+    | otherwise = Nothing
+{% endhighlight %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
